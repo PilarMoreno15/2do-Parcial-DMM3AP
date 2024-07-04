@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+a:link, :visited, :hover, :active {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.fondoNav {
+  background: #E36414;
+  padding: 2px 0;
+}
+
+@media (max-width: 768px) {
+  .fondoNav {
+    display: none;
+  }
+}
+
+.fondoNav .telefono {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondoNav .telefono a {
+  color: white;
+  font-size: 12px;
+}
+.fondoNav .telefono .fa {
+  color: rgb(255, 255, 255);
+}
+.fondoNav .telefono .mail {
+  color: rgb(46, 39, 39);
+  font-weight: bolder;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 0 10%;
+  background-color: #9A031E;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 25px;
+  width: 100%;
+  z-index: 1030;
+}
+
+.navbar a {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar .logo {
+  max-height: 100px;
+}
+
+.navbar a span,
+.brand .brand-header span {
+  color: #fc456a;
+}
+
+.navbar .lista {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5px;
+  gap: 20px;
+}
+
+.navbar .lista a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fc456a;
+}
+
+@media (max-width: 768px) {
+  .fixed-nav {
+    top: 0px;
+    max-height: 12%;
+    padding: 0 20px;
+  }
+  .main {
+    margin-top: 89px;
+  }
+  .navbar a {
+    color: white;
+    font-size: 12px;
+  }
+}
+
+#logo_full {
+  display: block;
+}
+#logo_chico {
+  display: none;
+}
+#hamburguesa {
+  display: none;
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar .lista {
+    display: none;
+  }
+  #logo_full {
+    display: none;
+  }
+  #hamburguesa {
+    display: block;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navegacion-movile {
+  display: flex;
+  flex-direction: column;
+  background-color: #9A031E;
+  width: 100%;
+  position: fixed;
+  gap: 8px;
+  z-index: 1070;
+  padding-bottom: 20px;
+}
+
+.navegacion-movile a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 3px;
+  font-size: 20px;
+}
+
+.navegacion-movile a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fc456a;
+}
+
+
+.brand .carousel-item img {
+  margin-top: 100px;
+  max-height: 820px;
+}
+
+.servicios {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.servicios .servicios-ofertas {
+  width: 50%;
+  background-color: #ECCEAE;
+  padding-top: 10px;
+  margin-right: 10%;
+}
+
+hr {
+  height: 2px;
+  background-color: black;
+}
+
+.media-body h3{
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.servicios .carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: column;
+}
+
+ /* Media Query para dispositivos móviles */
+ @media (max-width: 768px) {
+  .carousel-item img {
+    width: 100%;
+    margin: 0;
+  }
+  .brand .carousel-item img {
+    margin: 0;
+    padding: 0;
+  }
+  .servicios {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .carrousel {
+    width: 100%;
+  }
+  .servicios .servicios-ofertas {
+      width: 100%;
+      flex: 1 1 100%;
+      padding-top: 0px;
+      margin: 4%;
+  }
+}
+
+
+.habitaciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.cuarto-wrap {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.cuarto-wrap img {
+  width: 100%;
+  height: auto;
+}
+.text {
+  background: #fff;
+  padding: 20px;
+  flex: 1;
+}
+.star {
+  color: gold;
+}
+.text-center {
+  text-align: center;
+}
+.fs-1 {
+  font-size: 2rem;
+}
+.list-accomodation {
+  list-style: none;
+  padding: 0;
+}
+.list-accomodation li {
+  margin: 10px 0;
+}
+
+.cuarto-wrap .text .star span {
+  color: #fd7792;
+  margin: 0 4px; 
+}
+
+@media (max-width: 768px) {
+  .habitaciones {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+#visitas {
+  padding: 20px;
+  background-color: #Fb8B24;
+  color: black;
+}
+
+#contenido .card {
+  min-width: 200px;
+}
+
+.celeste {
+  background-color: rgb(176, 222, 237);
+}
+
+.celeste .card-header {
+  background-color: rgb(4, 131, 173);
+
+}
+
+.rosa {
+  background-color: rgb(255, 187, 197);
+}
+.rosa .card-header {
+  background-color: rgb(197, 58, 79);
+}
+
+.verde {
+  background-color: rgb(188, 245, 188);
+}
+.verde .card-header {
+  background-color: rgb(61, 161, 61);
+}
+
+.naranja {
+  background-color: rgb(254, 187, 161);
+}
+.naranja .card-header {
+  background-color: rgb(160, 97, 72);
+}
+
+.oculto {
+  display: none !important;
+}
+
+.img {
+  vertical-align: middle;
+  border-style: none; 
+}
+
+footer {
+  padding: 20px 0 ;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .footer-info {
+    flex-direction: column;
+  }
+}
+
+
+
+.footer-texto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-imagenes img {
+  max-width: 50%;
+  max-height: 220px;
+}
+
+.footer-oculto {
+  display: none;
+}

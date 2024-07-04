@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header> 
+    <!-- Navegacion -->
+    <div class="fondoNav fixed-top">
+        <p class="mb-0 telefono">
+            <span class="mail">Numero de Contacto:</span>
+            <a href="#" class="px-2">+911 1234 5678</a>
+            <i class="fa-brands fa-whatsapp mr-2"></i> <span class="mail px-2"> Deje un correo a: </span>
+            <a href="#">emeailejemplo@gmail.com</a>
+        </p>
+    </div>
+
+    <nav class="navbar contenedor fixed-nav">
+        <div>
+            <a class="fs-3" id="logo_full"  href="#">
+                Montaña<span>Serena</span>
+                <img class="logo" src="imagenes\Montana_Serena_solo.png" alt="logo">
+            </a>      
+        </div>
+
+        <div class="lista">
+            <a href="#servicios">Servicios</a>
+            <a href="#habitaciones">Habitaciones</a>
+            <a href="#visitas">Experiencia</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
+          <div class="menu-hamburguesa">
+            <a class="fs-3"   href="#">
+              <img class="logo" src="imagenes\Montana_Serena.png" alt="logo">
+            </a>
+
+            <div id="hamburguesa">
+              <img src="imagenes/menu.png" alt="menu">
+            </div>
+          </div>
+    </nav>
+
+    <div id="link-movile" class="oculto navegacion-movile">
+      <a href="#servicios">Servicios</a>
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#visitas">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <!-- Navegacion -->
+  </header> 
+
+  <main class="text-center main">
+    <!-- Section Hero -->
+    <section class="brand" id="brand">
+      <div id="carouselBrand" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselBrand" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselBrand" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselBrand" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active brand-img">
+            <img src="imagenes/img_hotel_3.jpg" class="d-block w-100"  alt="">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Habitaciones de lujo en Mar de Ajó</h1>
+                <p>Con cercania a las hermosas playas</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Reserve hoy mismo</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/img_hotel_2.jpg" class="d-block w-100"  alt="">
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Serena´s Palace en Caballito</h1>
+                <p>Experiencia unica e integral con piletas cerradas</p>
+                <p><a class="btn btn-lg btn-primary" href="#contacto">Conozca mas</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/img_hotel_1.jpg" class="d-block w-100"  alt="">
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Villa La Angostura.</h1>
+                <p>Hotel cerrado con todas las comodidades</p>
+                <p><a class="btn btn-lg btn-primary" href="#contacto">Reserve hoy mismo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBrand" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBrand" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Section Hero -->
+
+    <!-- Galeria Carousel -->
+    <section id="servicios">
+        <h2 class="display-3 text-center mb-5 mt-3">Servicios</h2>
+        <div class="servicios">
+                <div class="carrousel">
+                    <div class="col-12 col-md-9 mx-auto">
+                        <div id="carouselServicios" class="carousel slide">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes\Image_hotel_banner_2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes\Image_hotel_banner_3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes\Image_hotel_banner_1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicios-ofertas">
+                    <div class="media-body pl-3">
+                      <h3>Te y Café</h3>
+                      <p>Contamos con servicio de desayunos y meriendas integrado</p>
+                    </div>
+                    <hr>
+
+                    <div class="media-body pl-3">
+                      <h3>Duchas calientes</h3>
+                      <p>Spa con duchas de altas temperaturas y hermosas duchas en las habitaciones</p>
+                    </div>
+                    <hr>
+
+                    <div class="media-body pl-3">
+                      <h3>Lavanderia</h3>
+                      <p>Servicio de lavanderia con recolecion a las 8am y 8pm</p>
+                    </div> 
+                    <hr>
+
+                    <div class="media-body pl-3">
+                      <h3>Aires Acondicionado</h3>
+                      <p>Todos los habientes y habitaciones del hotel cuenta con servicio de climatizacion</p>
+                    </div>
+                    <hr>
+                      
+                    <div class="media-body pl-3">
+                      <h3>Wifi Gratuito</h3>
+                      <p>Wifi gratuito y de acceso seguro para todos los inquilinos</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Galeria Carousel -->
+
+    <!-- Habitaciones -->
+    <section id="habitaciones">
+      <h2 class="fs-1 text-center mb-3 mt-5">Habitaciones</h2>
+      <div class="habitaciones">
+          <div class="cuarto-wrap">
+              <img class="habitaciones-imagenes" src="imagenes/cuarto-2.jpg" alt="Olivos">
+              <div class="text p-4 p-xl-5 text-center">
+                  <p class="star mb-0">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                  </p>
+                  <h3 class="mb-3">Suite Presidencial</h3>
+                  <ul class="list-accomodation">
+                      <li><span>Personas:</span> 3 Personas</li>
+                      <li><span>Tamaño:</span> 45 m2</li>
+                      <li><span>Vista:</span> Vista al Mar</li>
+                      <li><span>Camas:</span> 1</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="cuarto-wrap">
+              <img class="habitaciones-imagenes" src="imagenes/cuarto-1.jpg" alt="mar de ajo">
+              <div class="text p-4 p-xl-5 text-center">
+                  <p class="star mb-0">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                  </p>
+                  <h3 class="mb-3">Cuarto estandar</h3>
+                  <ul class="list-accomodation">
+                      <li><span>Personas:</span> 2 Personas</li>
+                      <li><span>Tamaño:</span> 70 m2</li>
+                      <li><span>Vista:</span> Vista a la playa</li>
+                      <li><span>Camas:</span> 1</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="cuarto-wrap">
+              <img class="habitaciones-imagenes" src="imagenes/cuarto-3.jpg" alt="villa la angostura">
+              <div class="text p-4 p-xl-5 text-center">
+                  <p class="star mb-0">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                  </p>
+                  <h3 class="mb-3">Cuarto familiar</h3>
+                  <ul class="list-accomodation">
+                      <li><span>Personas:</span> 4 Personas</li>
+                      <li><span>Tamaño:</span> 90 m2</li>
+                      <li><span>Vista:</span> Vista a la ciudad</li>
+                      <li><span>Camas:</span> 3</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="cuarto-wrap">
+              <img class="habitaciones-imagenes" src="imagenes/cuarto-4.jpg" alt="caballito">
+              <div class="text p-4 p-xl-5 text-center">
+                  <p class="star mb-0">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                  </p>
+                  <h3 class="mb-3">Cuarto Deluxe</h3>
+                  <ul class="list-accomodation">
+                      <li><span>Personas:</span> 4 Personas</li>
+                      <li><span>Tamaño:</span> 62 m2</li>
+                      <li><span>Vista:</span> Vista a los patios internos</li>
+                      <li><span>Camas:</span> 2</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </section>
+  <!-- Habitaciones -->
+
+      <section id="visitas">
+        <div class="container-lg text-center">
+            <h2 class="h1 mb-3">Tenga una lista de opinión sobre sus estadías</h2>
+
+            <p class="fs-5">Aquí usted podrá colocar información que le parezca relevante sobre su estadía tanto propia del hotel como el lugar al que viajo así siempre que entre su información quedara guardada solo para usted.</p>
+
+            <button class="btn btn-light rounded-5 py-3 px-5 h5 fw-bold my-4" id="acceder" type="button"
+                data-bs-toggle="collapse" data-bs-target="#estadia" aria-expanded="false"
+                aria-controls="estadia">Mostrar</button>
+
+
+            <div id="estadia" class="collapse bg-light">
+
+                
+                <div class="row justify-content-between align-items-center p-3" id="acciones">
+                    <div class="col-sm-5 col-md-3">
+                        <select class="form-select" aria-label="Filtrar visitas por hotel" id="filtro">
+                            <option value="todas">Todos</option>
+                            <option value="caballito">Caballito</option>
+                            <option value="mardeajo">Mar de Ajo</option>
+                            <option value="angostura">Villa La Angostura</option>
+                            <option value="olivos">Olivos</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-auto d-flex align-items-center justify-content-between justify-content-sm-end pb-3 pb-sm-0 order-first order-sm-last">
+                        <button class="btn btn-danger rounded-circle p-3 mb-0 me-2" id="eliminar_todo">
+                            <img src="imagenes/delete.svg" alt="ícono eliminar">
+                        </button>
+
+                        <button class="btn btn-success rounded-5 py-3 px-5 h5 fw-bold mb-0" id="nueva"
+                            data-bs-toggle="modal" data-bs-target="#ingresar">Nuevo</button>
+                    </div>
+                </div>
+
+                <!-- Eliminamos todos los cards que teníamos maquetados en este documento para utilizarlos en los pasos previos del proceso de producción de la WebApp. -->
+
+                <div class="pt-3 pb-4 text-nowrap overflow-x-auto text-start" id="contenido">
+                    
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <div class="modal fade" id="ingresar" tabindex="-1" aria-label="Formulario de Visitas" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5">Ingresá una reseña</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar popup"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                      <div class="form-floating mb-3">
+                        <select class="form-select" aria-label="Filtrar Hoteles" id="hotel">
+                          <option value="caballito">Caballito</option>
+                          <option value="mardeajo">Mar de Ajo</option>
+                          <option value="angostura">Villa La Angostura</option>
+                          <option value="olivos">Olivos</option>
+                      </select>
+                      <label for="hotel">Hotel visitado</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="fecha" placeholder="11/06/2024" required>
+                        <label for="fecha">Fecha del viaje</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <textarea maxlength="50" placeholder="Cuente su experiencia" class="form-control" id="texto" required></textarea>
+                        <label for="texto">Experiencia</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <select class="form-select" aria-label="Filtrar claves por color" id="colores">
+                              <option value="rosa">Rosa</option>
+                              <option value="celeste">Celeste</option>
+                              <option value="verde">Verde</option>
+                              <option value="naranja">Naranja</option>
+                          </select>
+                          <label for="colores">Color de la tarjeta</label>
+                      </div>
+                      <div>
+                          <input type="submit" value="ingresar" class="btn btn-primary float-end rounded-5" data-bs-dismiss="modal">
+                          <input type="button" value="cancelar" class="btn btn-info float-end rounded-5 me-2" data-bs-dismiss="modal">
+                      </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales -->
+    <div class="modal fade" id="modificar" tabindex="-1" aria-label="Formulario de modificación de claves" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5">Modificar Reseña</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="form-floating mb-3">
+                        <select class="form-select" aria-label="Filtrar Hoteles" id="hotel_mod">
+                            <option value="caballito">Caballito</option>
+                            <option value="mardeajo">Mar de Ajo</option>
+                            <option value="angostura">Villa La Angostura</option>
+                            <option value="olivos">Olivos</option>
+                        </select>
+                        <label for="hotel">Hotel visitado</label>
+                      </div>
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="fecha_mod" placeholder="11/06/2024" required>
+                            <label for="fecha">Fecha del viaje</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea maxlength="50" placeholder="Cuente su experiencia" class="form-control" id="texto_mod" required></textarea>
+                            <label for="texto">Experiencia</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" aria-label="Filtrar visitas por color" id="colores_mod">
+                                <option value="rosa">Rosa</option>
+                                <option value="celeste">Celeste</option>
+                                <option value="verde">Verde</option>
+                                <option value="naranja">Naranja</option>
+                            </select>
+                            <label for="colores">Color de la tarjeta</label>
+                        </div>
+                        <div>
+                            <input type="submit" value="modificar" class="btn btn-primary float-end rounded-5" data-bs-dismiss="modal">
+                            <input type="button" value="cancelar" class="btn btn-info float-end rounded-5 me-2" data-bs-dismiss="modal" id="cancelar_mod">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Modales -->
+
+  </main>
+
+  <footer id="contacto" >
+    <div class="footer-info">
+      <div class="footer-texto">
+        <p>Carrera : Diseño Multimedial</p>
+        <p>Materia : Diseño y Programacion Web I </p>
+        <p>Turno : Mañana</p>
+        <p>Comisión : DMM3AP </p>
+        <p>Año : 2024 </p>  
+        <p>Alumnos : Antonio M Belén, Estevez Charo, Lauriante Celeste y Moreno Pilar</p> 
+      </div>
+
+      <div class="footer-imagenes oculto" id="footer-oculto">
+        <img src="imagenes/beluu.png" alt="Antonio M Belén">
+        <img src="imagenes/celes.png" alt="Lauriante Celeste">
+        <img src="imagenes/charo.png" alt="Estevez Charo">
+        <img src="imagenes/pili.png" alt="Moreno Pilar">
+      </div>
+    </div>
+
+
+    <button class="btn btn-light rounded-5 py-3 px-5 h5 fw-bold my-4" id="imagenes-footer">Información</button>
+
+  </footer>
+
+    <script src="https://kit.fontawesome.com/316dec2cb1.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
